@@ -1,4 +1,4 @@
-from code import verifier_reponse, score_final, table_valide
+from project import verifier_reponse, score_final, table_valide
 
 def test_verifier_reponse():
     
@@ -45,6 +45,6 @@ def test_table_valide():
     # Tables invalides
     assert table_valide(0) == False
     assert table_valide(11) == False
-    assert table_valide(15) == False
+    assert table_valide('acs') == False
     assert table_valide(-5) == False
     assert table_valide(-1) == False

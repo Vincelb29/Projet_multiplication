@@ -131,10 +131,10 @@ def tester_connaissances():
     score = 0
         # Boucle pour 10 questions aléatoires
     for _ in range(10):
-         # Génération de deux nombres aléatoires entre 1 et 10
-        table = random.randint(1, 10)
-            # Génération d'un autre nombre aléatoire entre 1 et 10
-        i = random.randint(1, 10)
+         # Génération de deux nombres aléatoires entre 2 et 10
+        table = random.randint(2, 10)
+            # Génération d'un autre nombre aléatoire entre 2 et 10
+        i = random.randint(2, 10)
             # Demande de la réponse à l'utilisateur
         reponse = obtenir_nombre_valide((f"{table} x {i} = "))
             # Vérification de la réponse
