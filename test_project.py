@@ -1,7 +1,7 @@
 from code import verifier_reponse, score_final, table_valide
 
 def test_verifier_reponse():
-    """Teste la vérification des réponses"""
+    
     # Réponses correctes
     assert verifier_reponse(5, 3, 15) == True
     assert verifier_reponse(7, 8, 56) == True
@@ -14,7 +14,7 @@ def test_verifier_reponse():
     assert verifier_reponse(3, 4, 0) == False
 
 def test_score_final():
-    """Teste les messages de score"""
+   
     # Score parfait (10/10)
     resultat = score_final(10, 5)
     assert "Félicitations" in resultat
@@ -35,7 +35,7 @@ def test_score_final():
     assert "travailler" in resultat
 
 def test_table_valide():
-    """Teste la validation des numéros de table"""
+    
     # Tables valides (1-10)
     assert table_valide(1) == True
     assert table_valide(5) == True
